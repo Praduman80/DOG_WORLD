@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding:0px;
+}
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.head h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 14px 0;
+    color :rgb(16, 213, 219);
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.selection p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(16, 213, 219);
+    font-family: 'Courier New', Courier, monospace;
+}
+.head-container{
+    background: url(/image/dogwalk.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    min-height: 350px;
+}
+.content-display{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.dog-breeds{
+    cursor: pointer;
+}
+.main .img-show{
+    width: 50%;
+    min-width:350px;
+    text-align: center !important;
+    margin:0 auto;
+
+}
+.img-show .spinner{
+    text-align: center !important;
+    margin:0 auto;
+    padding: 0;
+
+}
+.img-show .dog-breed-img{
+    width:100%;
+    min-width: 350px;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.last button{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding:14px 25px;
+    color:rgb(16, 213, 219);
+    background-color: rgb(229, 241, 241);
+    border-radius:5px;
+    border-color: rgb(16, 213, 219);
+    cursor:pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.download{
+    margin-right: 4%;
+}
+.last{
+    display: flex;
+    margin-top:3rem;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+.dog-breed .dog-breeds{
+    padding:8px 16px;
+    border: 3px solid rgb(9, 214, 204);
+    font-size: 20px;
+    border-radius: 5px;
+    color:rgb(16, 213, 219);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.dog-breed .dog-breeds option{
+    margin: 5px 0;
+    
+}
+/* scrollbar design not understand just copy and paste it's works */
+    ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.dog-breed-img{
+    display: none;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  @keyframes spin{
+      to{
+          transform: rotatez(360deg);
+      }
+  }
+  .spinner{
+      animation: 1.5s spin linear infinite;
+      display: none;
+      border-radius: 40rem !important;
+      width: 30% !important;
+  }
+
+  .show{
+      display: block !important;
+  }
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .head h1{
+        padding:0px 1rem;
+        font-size: 3.3rem;
+    }
+    .main-head{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 14px;
+    }
+    .head-container{
+        padding-bottom: 30px;
+       
+    }
+    .last{
+        display: block;
+        margin-top: 3rem;
+        text-align: center;
+        padding-bottom:5rem;
+    }
+    .download{
+        margin-bottom: 2rem;
+    }
+    .selection p{
+        padding-right: 0.2rem;
+    }
+}
